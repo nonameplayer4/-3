@@ -1,10 +1,9 @@
 # TODO Напишите функцию для поиска индекса товара
-def find_item_(list_, item):
-    k = 0
-    while k < len(list_):
-        if list_[k] == item:
-            return k
-        k += 1
+def find_item_(list_, item_):
+    for index, item in enumerate(list_):
+        if item == item_:
+            return index
+    return None
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
